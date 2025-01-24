@@ -1,15 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todos: [],
 };
 
 const todoSlice = createSlice({
-  name: 'todo',
+  name: "todo",
   initialState,
   reducers: {
     addTodo: (state, action) => {
-      const existingTodo = state.todos.find((todo) => todo.id === action.payload.id);
+      const existingTodo = state.todos.find(
+        (todo) => todo.id === action.payload.id
+      );
       if (!existingTodo) {
         state.todos.push(action.payload);
       }
