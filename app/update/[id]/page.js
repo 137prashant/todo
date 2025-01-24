@@ -221,10 +221,7 @@ export default function Page() {
               >
                 Back
               </button>
-              <button
-                type="submit"
-                className="btn btn-secondary"
-              >
+              <button type="submit" className="btn btn-secondary">
                 Update Task
               </button>
             </div>

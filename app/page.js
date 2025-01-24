@@ -11,9 +11,6 @@ export default function Home() {
       router.push("/tasks");
     }
   }, [isAuthenticated, router]);
-
-  // If not authenticated, show nothing (or you can show a loading screen)
-  // if (isAuthenticated) return null;
   return (
     <div>
       <div
